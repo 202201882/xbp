@@ -1,0 +1,10 @@
+from unicodedata import name
+
+
+for i in range(5): #コロンが入っていることに注意
+    print(i,"人目") #タブでずらしていることに注意！
+
+# 出力結果
+# 0 人目
+# 1 人目
+# 2 人目
