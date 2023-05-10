@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>デザイン演習3-4</title>
+    <style>
+      body {
+        background-color: #222;
+        color: #fff;
+        font-family: 'Helvetica', sans-serif;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        text-shadow: 2px 2px #ff0000;
+      }
+
+      p {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+        animation: heartbeat 1s ease-in-out infinite;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 5px solid #ff0000;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #ff0000;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>衝突</h1>
+    <br>
+    <h1><a href="https://youtu.be/08VQkBlmLUA" target="_blank">あ</a></h1>
+    <p>あああああああああああああああ</p>
+  </body>
+</html>
+<style>
+  body {
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  /* 中央に配置 */
+  #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /* テキストを白色に変更 */
+  h1, p {
+    color: #fff;
+    text-align: center;
+  }
+
+  /* 赤いドロップシャドウを追加 */
+  h1 {
+    text-shadow: 0 0 20px #f00, 0 0 40px #f00, 0 0 80px #f00;
+  }
+
+  /* 画像を回転 */
+  img {
+    display: block;
+    margin: 0 auto;
+    animation: spin 5s linear infinite;
+  }
+
+  /* heartbeatアニメーションを拡張 */
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2) rotate(5deg);
+    }
+    100% {
+      transform: scale(1) rotate(-5deg);
+    }
+  }
+
+  /* 新たなアニメーションを追加 */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
